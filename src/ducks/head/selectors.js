@@ -1,0 +1,1 @@
+export const isUserData = state => state.stateUserData;
