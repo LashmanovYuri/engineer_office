@@ -1,11 +1,12 @@
 import React from 'react';
 
+import { Box } from '@material-ui/core';
 
 function Header() {
   return (
-    <React.Component>
+    <Box>
       Шапка приложения
-    </React.Component>
+    </Box>
   );
 }
 

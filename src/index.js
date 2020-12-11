@@ -9,7 +9,7 @@ import mainTheme from './theme';
 import App from './App';
 
 ReactDOM.render(
-  <Provider store={store}>
+  <Provider store={store()}>
     <ThemeProvider theme={mainTheme}>
       <App />
     </ThemeProvider>

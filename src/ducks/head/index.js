@@ -6,6 +6,9 @@ export { default } from './redusers';
 export {
     getUserDataRequest,
     getUserDataSuccess,
+
+    upAge,
+    downAge,
 } from './actions';
 
 

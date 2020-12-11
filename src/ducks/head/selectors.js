@@ -1,1 +1,1 @@
-export const isUserData = state => state.stateUserData;
+export const isUserData = state => state.head.stateUserData;
