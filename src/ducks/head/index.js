@@ -6,13 +6,16 @@ export { default } from './redusers';
 export {
     getUserDataRequest,
     getUserDataSuccess,
-
     upAge,
     downAge,
+
+    openDialogSignIn,
+    closeDialogSignIn,
 } from './actions';
 
 
 /* Экспортируем все селекторы */
 export {
     isUserData,
+    isDialogSingIn,
 } from './selectors';

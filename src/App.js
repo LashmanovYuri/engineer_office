@@ -1,18 +1,39 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
-import Container from '@material-ui/core/Container';
+import {
+  isDialogSingIn,
+} from './ducks/head';
+
+import { Box } from '@material-ui/core/';
 
 import Header from './components/Header/Header';
 import MainPage from './components/MainPage/MainPage';
+import DialogSignIn from './components/DialogSignIn/DialogSignIn';
 
 
-function App() {
+function App({
+  isDialogSingIn,
+}) {
   return (
-    <Container maxWidth="xl">
-      {/* <Header /> */}
+    <Box>
+      <Header />
       <MainPage />
-    </Container>
+      {isDialogSingIn && <DialogSignIn />}
+    </Box>
   );
 }
 
-export default App;
+
+const mapStateToProps = state => ({
+  isDialogSingIn: isDialogSingIn(state),
+});
+
+
+const mapDispatchToProps = {};
+
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps,
+)(App)

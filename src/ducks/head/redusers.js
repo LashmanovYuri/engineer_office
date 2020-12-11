@@ -4,9 +4,11 @@ import { handleActions } from 'redux-actions';
 /* Импортируем action'ы */
 import {
     getUserDataSuccess,
-
     upAge,
     downAge,
+
+    openDialogSignIn,
+    closeDialogSignIn,
 } from './actions';
 
 
@@ -32,6 +34,16 @@ const stateUserData = handleActions(
 );
 
 
+const stateDialogSignIn = handleActions(
+    {
+        [openDialogSignIn.toString()]: ( _state, action ) => 'OPEN',
+        [closeDialogSignIn.toString()]: ( _state, action ) => 'CLOSE',
+    },
+    'CLOSE'
+);
+
+
 export default combineReducers({
     stateUserData,
+    stateDialogSignIn,
 });

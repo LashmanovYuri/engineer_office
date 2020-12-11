@@ -8,11 +8,7 @@ import { Box, Grid, Paper } from '@material-ui/core';
 function MainPage() {
   return (
     <Box>
-      <Grid>
-        <Paper>
-          <Head />
-        </Paper>
-      </Grid>
+      <Head />
     </Box>
   );
 }
