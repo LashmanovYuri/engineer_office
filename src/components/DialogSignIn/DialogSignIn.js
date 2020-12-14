@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { connect } from 'react-redux';
 
 import {
@@ -22,7 +22,8 @@ function DialogSignIn({
   closeDialogSignIn,
   isDialogSingIn,
 }) {
-
+  const [login, setLogin] = useState('');
+  const [pass, setPass] = useState('');
 
   return (
     <Box>
@@ -39,25 +40,24 @@ function DialogSignIn({
           <TextField
             autoFocus
             margin="dense"
-            id="name"
             label="E-mail"
             type="email"
             fullWidth
+            onChange={(e) => setLogin(e.target.value)}
           />
           <TextField
-            autoFocus
             margin="dense"
-            id="name"
             label="Пароль"
             type="password"
             fullWidth
+            onChange={(e) => setPass(e.target.value)}
           />
         </DialogContent>
         <DialogActions>
           <Button onClick={() => closeDialogSignIn()} color="primary">
             Отменить
           </Button>
-          <Button onClick={() => closeDialogSignIn()} color="primary">
+          <Button onClick={() => alert(`Login: ${login} \nPassword: ${pass}`)} color="primary">
             Войти
           </Button>
         </DialogActions>
