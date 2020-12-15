@@ -4,7 +4,6 @@ const {
     userData: {
         getUserDataRequest: getUserDataRequest,
         getUserDataSuccess: getUserDataSuccess,
-
         upAge: upAge,
         downAge: downAge,
     },
@@ -16,7 +15,6 @@ const {
     USER_DATA: {
         GET_USER_DATA_REQUEST: null,
         GET_USER_DATA_SUCCESS: null,
-
         UP_AGE: null,
         DOWN_AGE: null,
     },

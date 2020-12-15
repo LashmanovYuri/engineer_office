@@ -17,7 +17,6 @@ function App({
 }) {
   return (
     <Box>
-      <Header />
       <MainPage />
       {isDialogSingIn && <DialogSignIn />}
     </Box>
