@@ -8,8 +8,7 @@ import {
 import { Box } from '@material-ui/core/';
 
 import Header from './components/Header/Header';
-import MainPage from './components/MainPage/MainPage';
-import DialogSignIn from './components/DialogSignIn/DialogSignIn';
+import MainPage from './conteiners/MainPage/MainPage';
 
 
 function App({
@@ -18,7 +17,6 @@ function App({
   return (
     <Box>
       <MainPage />
-      {isDialogSingIn && <DialogSignIn />}
     </Box>
   );
 }

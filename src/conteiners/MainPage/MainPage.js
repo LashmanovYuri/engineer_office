@@ -9,11 +9,11 @@ import {
 } from '@material-ui/core';
 
 // Импорт компонентов
-import Header from '../Header/Header';
-import BlockOne from '../BlockOne/BlockOne';
-import BlockTwo from '../BlockTwo/BlockTwo';
-import BlockThree from '../BlockThree/BlockThree';
-import BlockFour from '../BlockFour/BlockFour';
+import Header from '../../components/Header/Header';
+import BlockOne from '../../components/BlockOne/BlockOne';
+import BlockTwo from '../../components/BlockTwo/BlockTwo';
+import BlockThree from '../../components/BlockThree/BlockThree';
+import BlockFour from '../../components/BlockFour/BlockFour';
 
 // Локальная таблица стилей
 const useStyles = makeStyles((theme) => ({
