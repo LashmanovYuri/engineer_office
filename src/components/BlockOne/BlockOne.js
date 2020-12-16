@@ -10,7 +10,9 @@ import {
 
 // Импорт компонентов Material-UI
 import {
-  Card,
+  Card, 
+  IconButton, 
+  Typography,
 } from '@material-ui/core';
 
 // Импорт иконок Material-UI
@@ -34,7 +36,16 @@ function BlockOne({
 
   return (
     <Card className={classes.root}>
-      Блок 1
+      <Typography variant='h5'>
+        Блок - Захаров Антон
+      </Typography>
+      <IconButton
+        onClick={() => {
+          alert('Hello')
+        }}
+      >
+        <MailIcon />
+      </IconButton>
     </Card>
   );
 }
