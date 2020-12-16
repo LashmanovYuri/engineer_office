@@ -34,7 +34,7 @@ function BlockFour({
 
   return (
     <Card className={classes.root}>
-      Блок 4
+      Лашманов Юрий
     </Card>
   );
 }
