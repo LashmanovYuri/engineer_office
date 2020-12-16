@@ -34,7 +34,7 @@ function BlockThree({
 
   return (
     <Card className={classes.root}>
-      Блок 3
+      Кишов
     </Card>
   );
 }
