@@ -34,7 +34,7 @@ function BlockTwo({
 
   return (
     <Card className={classes.root}>
-      Блок 2
+      Гаврилов
     </Card>
   );
 }
