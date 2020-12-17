@@ -26,6 +26,24 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* Входящие данные */
+const data = [
+  {'Январь': {
+    'Всего обращений': '750',
+    'Нарешен КС': '43',
+    'Возвратов': '33',
+  }},
+  {'Февраль': {
+    'Всего обращений': '654',
+    'Нарешен КС': '76',
+    'Возвратов': '33',
+  }},
+  {'Март': {
+    'Всего обращений': '720',
+    'Нарешен КС': '83',
+    'Возвратов': '13',
+  }}
+];
 
 // Функция-компонент
 function BlockOne({
@@ -37,15 +55,11 @@ function BlockOne({
   return (
     <Card className={classes.root}>
       <Typography variant='h5'>
-        Блок - Захаров Антон
+        Алексей Фадин
       </Typography>
-      <IconButton
-        onClick={() => {
-          alert('Hello')
-        }}
-      >
-        <MailIcon />
-      </IconButton>
+      <Typography variant='body1'>
+        Здесь должен быть график с возможностью переключения по месяцам
+      </Typography>
     </Card>
   );
 }
