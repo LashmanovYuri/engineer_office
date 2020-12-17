@@ -11,6 +11,7 @@ import {
 // Импорт компонентов Material-UI
 import {
   Card,
+  Typography,
 } from '@material-ui/core';
 
 // Импорт иконок Material-UI
@@ -24,6 +25,34 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* Входящие данные */
+const data = [
+  {
+    startTime: '9:00',
+    endTime: '10:45',
+    name: 'Теория вероятностей',
+    address: 'Корпус 2, кабинет 211',
+    teacherName: 'Иванов Петр Васильевич',
+    type: 'Лекция',
+  },
+  {
+    startTime: '11:00',
+    endTime: '12:45',
+    name: 'Информатика',
+    address: 'Корпус 2, кабинет 311',
+    teacherName: 'Сурков Иван Гаврилович',
+    type: 'Лекция',
+  },
+  {
+    startTime: '13:30',
+    endTime: '15:45',
+    name: 'Информатика',
+    address: 'Корпус 2, кабинет 231',
+    teacherName: 'Сурков Иван Гаврилович',
+    type: 'Практика',
+  },
+];
+
 
 // Функция-компонент
 function BlockFour({
@@ -34,7 +63,12 @@ function BlockFour({
 
   return (
     <Card className={classes.root}>
-      Лашманов Юрий
+      <Typography variant='h5'>
+        Юрий Лашманов
+      </Typography>
+      <Typography variant='body1'>
+        Здесь должено быть расписание занятий
+      </Typography>
     </Card>
   );
 }
