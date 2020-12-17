@@ -11,6 +11,7 @@ import {
 // Импорт компонентов Material-UI
 import {
   Card,
+  Typography,
 } from '@material-ui/core';
 
 // Импорт иконок Material-UI
@@ -24,6 +25,25 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+/* Входящие данные */
+const data = [
+  {
+    name: 'Название первой задачи',
+    subject: 'Тема первой задачи',
+    tags: ['Задача', 'Срочная'],
+  },
+  {
+    name: 'Вторая задача',
+    subject: 'Тема второй задачи',
+    tags: ['Сделать завтра', 'Срочная'],
+  },
+  {
+    name: 'Еще задача',
+    subject: 'Тема задачи',
+    tags: ['Задача', 'Важная'],
+  },
+];
+
 
 // Функция-компонент
 function BlockTwo({
@@ -34,7 +54,12 @@ function BlockTwo({
 
   return (
     <Card className={classes.root}>
-      Блок 2
+      <Typography variant='h5'>
+        Сергей Гаврилов
+      </Typography>
+      <Typography variant='body1'>
+        Здесь должен быть список задач с названием, темой и тегами
+      </Typography>
     </Card>
   );
 }
